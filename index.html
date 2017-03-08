@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Larraz's Homepage</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+<h1>Daniel Larraz</h1>
+
+<nav role="navigation">
+<p>
+ <a href="#about">About me</a> - 
+ <a href="#publications">Publications</a> - 
+ <a href="#teaching">Teaching</a> - 
+ <a href="#contact">Contact</a>
+</p>
+</nav>
+</header>
+
+<div id="about">
+
+<div id="photo"><img src="photo.jpg" alt="Photo of Daniel Larraz"></div>
+
+<div id="introduction">
+<p>I am a postdoctoral research scholar at the <a href="http://www.uiowa.edu">University of Iowa</a>.
+My research focuses on the application of 
+<abbr title="Satisfiability Modulo Theories">SMT</abbr>-based techniques to the
+formal verification of computer systems. I am currently working with 
+<a href="http://homepage.cs.uiowa.edu/~tinelli/">Cesare Tinelli</a> on the
+development of automated techniques
+to verify synchronous data-flow programs, and their implementation in the 
+model checker <a href="http://kind2-mc.github.io/kind2/">Kind2</a>.</p>
+
+<p>I obtained my PhD at the <a href="http://www.upc.edu">Technical University of Catalonia</a>
+(<abbr title="Universitat Politècnica de Catalunya" lang="ca">UPC</abbr>) under the supervision of 
+<a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>. For my PhD I worked on 
+array invariant generation, termination analysis, and compositional safety verification 
+of imperative programs using Max-<abbr title="Satisfiability Modulo Theories">SMT</abbr> solvers.
+I also contributed to
+the implementation of the <a href="http://www.cs.upc.edu/~albert/VeryMax.html">VeryMax</a> tool,
+a verification framework for checking automatically safety properties, and proving (conditional) 
+termination and non-termination of C/C++ programs.
+
+<p>From April through June 2014, I spent three months as a research intern at
+<a href="http://research.microsoft.com/en-us/labs/cambridge/">Microsoft Research Cambridge</a>
+in the <a href="http://research.microsoft.com/en-us/groups/ppt/">Programming Principles and Tools</a> group
+under the supervision of 
+<a href="https://www.microsoft.com/en-us/research/people/rybal/">Andrey Rybalchenko</a>.</p>
+</div>
+
+</div>
+
+<h2 id="publications">Publications</h2>
+
+<ul class="publications">
+<li>
+<span class="paper-title">Proving Termination through Conditional Termination</span>
+[<a href="papers/tacas17.pdf">PDF</a>].
+Cristina Borralleras,
+<a href="http://research.microsoft.com/en-us/people/mabrocks/">Marc Brockschmidt</a>,
+Daniel Larraz,
+<a href="http://www.cs.upc.edu/~oliveras/">Albert Oliveras</a>,
+<a href="http://www.cs.upc.edu/~erodri/">Enric Rodríguez-Carbonell</a>,
+and <a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>.
+In <span class="conference-name">23nd International Conference on Tools and Algorithms for 
+the Construction and Analysis of Systems
+(<abbr title="Tools and Algorithms for the Construction and Analysis of Systems">TACAS</abbr>'17)</span>,
+April 2017, Uppsala (Sweden).
+</li>
+<li>
+<span class="paper-title">Speeding Up the Constraint-Based Method in Difference Logic</span>
+[<a href="papers/sat16.pdf">PDF</a>].
+Lorenzo Candeago, Daniel Larraz,
+<a href="http://www.cs.upc.edu/~oliveras/">Albert Oliveras</a>,
+<a href="http://www.cs.upc.edu/~erodri/">Enric Rodríguez-Carbonell</a>
+and <a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>.
+In <span class="conference-name">19th International Conference on Theory and
+Applications of Satisfiability Testing (SAT'16)</span>,
+July 2016, Bordeaux (France). <a href="http://www.springer.de/comp/lncs/index.html">&copy; Springer-Verlag</a>.
+</li>
+<li>
+<span class="paper-title">Compositional Safety Verification with Max-SMT</span>
+[<a href="papers/fmcad15.pdf">PDF</a>].
+<a href="http://research.microsoft.com/en-us/people/mabrocks/">Marc Brockschmidt</a>,
+Daniel Larraz,
+<a href="http://www.cs.upc.edu/~oliveras/">Albert Oliveras</a>,
+<a href="http://www.cs.upc.edu/~erodri/">Enric Rodríguez-Carbonell</a>
+and <a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>.
+In <span class="conference-name">15th Formal Methods in Computer-Aided Design
+(<abbr title="Formal Methods in Computer-Aided Design">FMCAD</abbr>'15)</span>,
+September 2015, Austin (USA). &copy; ACM/IEEE.
+</li>
+<li>
+<span class="paper-title">Proving Non-termination Using Max-SMT</span>
+[<a href="papers/cav14.pdf">PDF</a>].
+Daniel Larraz, 
+<a href="http://www0.cs.ucl.ac.uk/staff/K.Nimkar/">Kaustubh Nimkar</a>,
+<a href="http://www.cs.upc.edu/~oliveras/">Albert Oliveras</a>,
+<a href="http://www.cs.upc.edu/~erodri/">Enric Rodríguez-Carbonell</a>
+and <a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>.
+In <span class="conference-name">26th International Conference on Computer 
+Aided Verification (<abbr title="Computer 
+Aided Verification">CAV</abbr>'14)</span>, July 2014, Vienna (Austria).
+<a href="http://www.springer.de/comp/lncs/index.html">&copy; Springer-Verlag</a>.
+</li>
+<li>
+<span class="paper-title">Minimal-Model-Guided Approaches to Solving Polynomial
+Constraints and Extensions</span>
+[<a href="papers/sat14.pdf">PDF</a>].
+Daniel Larraz,
+<a href="http://www.cs.upc.edu/~oliveras/">Albert Oliveras</a>,
+<a href="http://www.cs.upc.edu/~erodri/">Enric Rodríguez-Carbonell</a>
+and <a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>.
+In <span class="conference-name">17th International Conference on Theory and
+Applications of Satisfiability Testing (SAT'14)</span>,
+July 2014, Vienna (Austria). <a href="http://www.springer.de/comp/lncs/index.html">&copy; Springer-Verlag</a>. 
+</li>
+<li>
+<span class="paper-title">
+Proving Termination of Imperative Programs Using Max-SMT</span>
+[<a href="papers/fmcad13.pdf">PDF</a>].
+Daniel Larraz,
+<a href="http://www.cs.upc.edu/~oliveras/">Albert Oliveras</a>,
+<a href="http://www.cs.upc.edu/~erodri/">Enric Rodríguez-Carbonell</a> and
+<a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>.
+In <span class="conference-name">13th Formal Methods in Computer-Aided Design 
+(<abbr title="Formal Methods in Computer-Aided Design">FMCAD</abbr>'13)</span>,
+October 2013, Portland, <abbr title="Oregon">OR</abbr> (USA). &copy; ACM/IEEE.
+</li>
+<li>
+<span class="paper-title">SMT-Based Array Invariant Generation</span>
+[<a href="papers/vmcai13.pdf">PDF</a>].
+Daniel Larraz,
+<a href="http://www.cs.upc.edu/~erodri/">Enric Rodríguez-Carbonell</a> and
+<a href="http://www.cs.upc.edu/~albert/">Albert Rubio</a>.
+In <span class="conference-name">14th International Conference on Verification,
+Model Checking, and Abstract Interpretation 
+(<abbr title="Verification, Model Checking, and Abstract Interpretation">VMCAI</abbr>'13)</span>,
+January 2013, Rome (Italy). <a href="http://www.springer.de/comp/lncs/index.html">&copy; Springer-Verlag</a>.
+</li>
+</ul>
+
+<h2 id="teaching">Teaching Assistant</h2>
+
+<a href="http://www.fib.upc.edu/en/estudiar-enginyeria-informatica/assignatures/LP.html">
+Programming Languages</a> at 
+<a href="http://www.upc.edu"><abbr title="Universitat Politècnica de Catalunya" lang="ca">UPC</abbr></a>,
+(2014-2015, Bachelor in Informatics Engineering).
+
+<h2 id="contact">Contact</h2>
+
+<p>Email: daniel-larraz at
+<span class="hidden-note">(replace at with @)</span>
+<span>uiowa</span>&#46;edu<br>
+Phone: +1-319-353-2547<br>
+Office: 201N <a href="http://maps.uiowa.edu/mlh">MLH</a></p>
+
+<p>Mailing address:<br>
+<a href="http://www.cs.uiowa.edu">Department of Computer Science</a><br>
+<a href="http://www.uiowa.edu">The University of Iowa</a><br>
+14 <a href="http://maps.uiowa.edu/mlh">MacLean Hall</a><br>
+Iowa City, IA 52242<br>
+USA</p>
+
+<hr>
+
+<p>Last updated: March 8, 2017</p>
+
+</body>
+
+</html> 

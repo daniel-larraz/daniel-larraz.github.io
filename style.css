@@ -1,0 +1,92 @@
+
+h1, h2 {
+  color: #005A9C;
+}
+
+h1 {
+  font-size: 170%;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+hr {
+  color: #d3d3d3;
+  border-style: dashed;
+}
+
+#introduction {
+  text-align: justify;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 900px;
+}
+
+@media only screen and (min-width : 900px)
+{
+  html {
+    display: table;
+    margin: auto;
+  }
+
+  body {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-left: 2px dashed #d3d3d3;
+    border-right: 2px dashed #d3d3d3;
+  }
+}
+
+@media only screen and (min-width : 451px)
+{
+  #introduction {
+    margin-right: 0.5em;
+  }
+
+  #photo {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (max-width : 450px) {
+  #photo {
+    text-align: center;
+  }
+}
+
+#photo img {
+  border: 1px solid;
+}
+
+ul.publications li {
+   margin-top: 1em;
+}
+
+span.paper-title {
+   font-weight: bold;
+}
+
+span.conference-name {
+   font-style: italic;
+}
+
+.hidden-note {
+  display:none;
+}
+
+a:link, a:visited, a:active {
+  color: #003399;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #003399;
+  text-decoration: underline; 
+}
+
